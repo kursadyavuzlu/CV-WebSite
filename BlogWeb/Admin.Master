@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="BlogWeb.Admin" %>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Web Blog Admin</title>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="AdminFiles/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="AdminFiles/bootstrap.min.css" rel="stylesheet" />
+    <!-- Our Custom CSS -->
+    <link href="StyleSheet_Admin.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Admin Panel</h3>
+                <strong>BS</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                
+                <li>
+                    <a href="AboutMe.Aspx">
+                        <i class="fas fa-image"></i>
+                        AboutMe
+                    </a>
+                </li>
+                <li>
+                    <a href="Experience.Aspx">
+                        <i class="fas fa-briefcase"></i>
+                        Experiences
+                    </a>
+                    <a href="Education.Aspx">
+                        <i class="fas fa-education"></i>
+                        Educations
+                    </a>
+                </li>
+                <li>
+                    <a href="Skill.Aspx">
+                        <i class="fas fa-image"></i>
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <a href="Interest.Aspx">
+                        <i class="fas fa-question"></i>
+                        Interests
+                    </a>
+                </li>
+                <li>
+                    <a href="Certification.aspx">
+                        <i class="fas fa-paper-plane"></i>
+                        Certifications
+                    </a>
+                </li>
+                <li>
+                    <a href="Default.aspx">
+                        <i class="fas fa-paper-plane"></i>
+                        See your CV
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+            </asp:ContentPlaceHolder>
+
+        </div>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="AdminFiles/jquery-1.12.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="AdminFiles/js-bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>
