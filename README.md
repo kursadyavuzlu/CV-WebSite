@@ -10,16 +10,16 @@ This project was prepared using ASP.NET Web forms. It is designed as a simple CV
 
 The technologies I used and learnt:
 
--ASP.NET Web Forms - C#
--SQL Database and Tables (MSSQL)
--SQL Data Types
--Related Tables
--Diagrams
--Join Operations (Join)
--Procedure Creation
--Dataset Structure
--Ready Template Installation and Editing
--CSS Controls
--Bootstrap Structure
--Layout Control
--Admin and User Panels
+- ASP.NET Web Forms - C#
+- SQL Database and Tables (MSSQL)
+- SQL Data Types
+- Related Tables
+- Diagrams
+- Join Operations (Join)
+- Procedure Creation
+- Dataset Structure
+- Ready Template Installation and Editing
+- CSS Controls
+- Bootstrap Structure
+- Layout Control
+- Admin and User Panels
